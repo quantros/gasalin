@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    font-size: 14px; /* Уменьшенный размер шрифта */
+}
+
+h1 {
+    color: #333;
+}
+
+.platform-stats {
+    background-color: #ddd;
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed; /* Добавлено для оптимизации ширины колонок */
+}
+
+table, th, td {
+    border: 5px solid #ccc;
+}
+
+th, td {
+    padding: 5px;
+    text-align: left;
+    overflow: hidden; /* Добавлено, чтобы текст не выходил за пределы ячейки */
+    text-overflow: ellipsis; /* Добавлено, чтобы добавить многоточие если текст не помещается */
+    white-space: nowrap; /* Добавлено, чтобы текст не переносился на новую строку */
+}
+
+th {
+    background-color: #eee;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
