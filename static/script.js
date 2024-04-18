@@ -7,6 +7,9 @@ window.onload = function() {
         const totalParticipants = document.getElementById('totalParticipants');
         const tbody = document.querySelector('#data tbody');
 
+        // Сортировка данных по id_blockchain
+        data.sort((a, b) => parseInt(a.id_blockchain) - parseInt(b.id_blockchain));
+
         if (data.length > 0) {
             totalEarned.textContent = data[0].total_earned;
             users24Hours.textContent = data[0].users_last_24_hours;
